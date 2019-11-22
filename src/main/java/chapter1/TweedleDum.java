@@ -11,7 +11,7 @@ public class TweedleDum {
 		x += i;
 		//The above one contains a hidden cast
 		//This should not compile
-		x = x + i;
+		//x = x + i;
 		//This wont cast automatically and requires an explicit cast
 	}
 
