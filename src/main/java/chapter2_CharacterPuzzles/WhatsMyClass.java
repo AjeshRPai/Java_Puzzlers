@@ -1,5 +1,7 @@
 package chapter2_CharacterPuzzles;
 
+import java.io.File;
+
 public class WhatsMyClass
 {
 	public static void main(String[] args)
@@ -8,8 +10,15 @@ public class WhatsMyClass
 
 
 		// Solution
+		// If, however,
+		// the file separator is a backslash, as it is on Windows, the program prints something like this:
 
 		System.out.println(WhatsMyClass.class.getName().replaceAll("\\.", "/") + ".class");
+
+
+		// Platform independent solution
+
+		System.out.println(WhatsMyClass.class.getName().replace('.', File.separatorChar) + ".class");
 
 	}
 
